@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+html {
+  font-size: 125%;
+}
+
+
+@font-face {
+    font-family: "Helvetica Regular";
+    src: url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.eot");
+    src: url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.svg#Helvetica Regular")format("svg");
+}
+
+@theme {
+  --font-sans: "Helvetica Regular", "Inter", system-ui, -apple-system, sans-serif;
+  --color-light-bg: #F8FAFC;
+}
+
+/* Luminous Editorial Liquid Glass Styling */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(32px) saturate(120%);
+  -webkit-backdrop-filter: blur(32px) saturate(120%);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 
+    0 15px 45px -12px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.95);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bright Glass Shine Animation */
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  transition: all 0.75s ease;
+  pointer-events: none;
+}
+
+.liquid-glass:hover::before {
+  left: 150%;
+  transition: all 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Custom Scrollbar for Luminous Workspace */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(248, 250, 252, 0.95);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(15, 23, 42, 0.1);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(15, 23, 42, 0.25);
+}
+
+/* Premium Typography Letter Spacings */
+h1, h2, h3, h4 {
+  font-family: "Helvetica Regular", sans-serif;
+  letter-spacing: -0.04em;
+  color: #0F172A;
+  font-weight: 500;
+}
+
+/* Cinematic Atmospheric Depth Overlay */
+.cinematic-depth {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.25) 0%, transparent 100%);
+  pointer-events: none;
+}
