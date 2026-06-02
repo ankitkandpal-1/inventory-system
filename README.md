@@ -1,215 +1,271 @@
-# EasyMart – Inventory & Order Management System
+# 🚀 EasyMart – Inventory & Order Management System
 
-EasyMart is a production-ready, full-stack **Inventory & Order Management System** designed to manage products, customers, inventory, and transactions efficiently.
 
-The project is built with a modern frontend and backend architecture using **React**, **FastAPI**, **Docker**, and cloud deployment support for **Render** and **Vercel**.
 
-## Features
 
-* Product & Inventory Management
-* Customer Management
+\
+
+### Production-Ready Full Stack Inventory & Order Management Platform
+
+Manage products, customers, inventory, and transactions with a modern React frontend and FastAPI backend.
+
+🌐 **Live Demo:** https://inventory-system-ten-woad.vercel.app/
+
+
+# ✨ Key Features
+
+### 📦 Inventory Management
+
+* Create Products
+* Update Inventory Levels
+* Stock Monitoring
+* Product Catalog Management
+
+### 👥 Customer Management
+
+* Customer Registration
+* Customer Profiles
+* Customer Order History
+
+### 💳 Transaction Management
+
+* Order Processing
 * Transaction Tracking
-* Authentication System (Login/Register)
-* Dashboard for Business Insights
-* Checkout Flow
-* REST API Architecture
-* Dockerized Full-Stack Setup
-* Cloud Deployment Ready (Render + Vercel)
+* Checkout Workflow
 
-## Tech Stack
+### 🔐 Authentication
 
-### Frontend
+* Secure Login
+* User Registration
+* Protected Routes
+
+### 📊 Dashboard
+
+* Business Overview
+* Product Insights
+* Inventory Statistics
+
+### 🌐 REST API
+
+* FastAPI-powered Backend
+* OpenAPI Documentation
+* Scalable Architecture
+
+---
+
+# 🏗 System Architecture
+
+```text
+┌─────────────────┐
+│   React Frontend │
+└────────┬────────┘
+         │ Axios
+         ▼
+┌─────────────────┐
+│   FastAPI API   │
+└────────┬────────┘
+         │ SQLAlchemy
+         ▼
+┌─────────────────┐
+│    Database     │
+└─────────────────┘
+```
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
 
 * React
 * Vite
 * JavaScript
-* CSS
 * Axios
 * React Router DOM
+* CSS
 
-### Backend
+## Backend
 
 * FastAPI
-* Python
 * SQLAlchemy
-* REST API
+* Python
 
-### DevOps & Deployment
+## DevOps
 
 * Docker
 * Docker Compose
-* Render (Backend Deployment)
-* Vercel (Frontend Deployment)
+* Vercel
+* Render
 
-## Project Structure
+---
 
-```txt
-EasyMart/
-│── backend/
-│   ├── app/
+# 📁 Project Structure
+
+```text
+EasyMart
+│
+├── backend
+│   ├── app
 │   │   ├── crud.py
 │   │   ├── database.py
 │   │   ├── main.py
 │   │   ├── models.py
 │   │   └── schemas.py
+│   │
 │   ├── requirements.txt
 │   └── Dockerfile
 │
-│── frontend/
-│   ├── src/
-│   ├── public/
+├── frontend
+│   ├── src
+│   ├── public
 │   ├── package.json
 │   └── Dockerfile
 │
-│── docker-compose.yml
-│── render.yaml
-│── README.md
+├── docker-compose.yml
+├── render.yaml
+└── README.md
 ```
 
-## Installation & Setup
+---
 
-### 1. Clone the Repository
+# ⚙️ Local Setup
+
+## Clone Repository
 
 ```bash
 git clone https://github.com/ankitkandpal-1/inventory-system.git
+
 cd inventory-system
 ```
 
-### 2. Backend Setup
+---
 
-Move into the backend directory:
+## Backend Setup
 
 ```bash
 cd backend
-```
 
-Create and activate a virtual environment:
-
-#### Windows
-
-```bash
 python -m venv venv
+
+# Windows
 venv\Scripts\activate
-```
 
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
 
-Run the backend server:
-
-```bash
 uvicorn app.main:app --reload
 ```
 
-Backend will run on:
+Backend URL:
 
-```txt
+```text
 http://localhost:8000
 ```
 
 ---
 
-### 3. Frontend Setup
-
-Move to frontend:
+## Frontend Setup
 
 ```bash
 cd frontend
-```
 
-Install dependencies:
-
-```bash
 npm install
-```
 
-Start frontend:
-
-```bash
 npm run dev
 ```
 
-Frontend will run on:
+Frontend URL:
 
-```txt
+```text
 http://localhost:5173
 ```
 
-## Docker Setup
+---
 
-Run the full project with Docker:
+# 🐳 Docker Deployment
+
+Build and Run:
 
 ```bash
 docker compose up --build
 ```
 
-Or run in detached mode:
+Detached Mode:
 
 ```bash
 docker compose up --build -d
 ```
 
-Stop containers:
+Stop Containers:
 
 ```bash
 docker compose down
 ```
 
-## API Documentation
+---
 
-FastAPI automatically provides API docs:
+# 📚 API Documentation
 
 ### Swagger UI
 
-```txt
+```text
 http://localhost:8000/docs
 ```
 
 ### ReDoc
 
-```txt
+```text
 http://localhost:8000/redoc
 ```
 
-## Screens & Modules
+---
 
-* Dashboard
-* Catalog
-* Customers
-* Transactions
-* Checkout
-* Login
-* Register
-
-## Deployment
+# 🌍 Live Deployment
 
 ### Frontend
 
-Deploy using **Vercel**
+https://inventory-system-ten-woad.vercel.app/
 
 ### Backend
 
-Deploy using **Render**
+Deployable via Render using included `render.yaml`.
 
-## Future Improvements
+---
 
-* Payment Integration
+# 🚀 Future Roadmap
+
+* Payment Gateway Integration
 * Analytics Dashboard
-* Order Notifications
-* Role-Based Authentication
+* AI-Based Inventory Forecasting
+* Email Notifications
+* Multi-User Roles & Permissions
 * Admin Panel
-* AI-based Inventory Insights
+* Advanced Reporting
 
-## Author
+---
 
-**Ankit Kandpal**
+# 👨‍💻 Author
 
-* GitHub: https://github.com/ankitkandpal-1
-* Email: [ankitkandpal210@gmail.com](mailto:ankitkandpal210@gmail.com)
+### Ankit Kandpal
 
-## License
+B.Tech Student | Software Developer | AI/ML Enthusiast
 
-This project is for educational and learning purposes.
+GitHub:
+https://github.com/ankitkandpal-1
+
+LinkedIn:
+(Add Your LinkedIn URL)
+
+Email:
+[ankitkandpal210@gmail.com](mailto:ankitkandpal210@gmail.com)
+
+---
+
+# ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+---
+
+# 📄 License
+
+This project is developed for educational and portfolio purposes.
